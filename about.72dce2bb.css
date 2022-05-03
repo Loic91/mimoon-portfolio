@@ -1,0 +1,146 @@
+body {
+  background: black;
+}
+
+#smooth-wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.main {
+  color: whitesmoke;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 150px;
+}
+@media (max-width: 1023px) {
+  .main {
+    margin: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .main {
+    max-width: 350px;
+    margin: 15px;
+  }
+}
+
+#about__container {
+  position: fixed;
+  z-index: 2;
+  mix-blend-mode: difference;
+}
+@media (max-width: 767px) {
+  #about__container {
+    position: relative;
+  }
+}
+
+#nav {
+  position: fixed;
+  z-index: 200;
+  mix-blend-mode: difference;
+}
+
+#img_logo {
+  margin-top: -0.5vw;
+}
+@media (max-width: 767px) {
+  #img_logo {
+    margin-top: -2vw;
+  }
+}
+
+.menu-icon {
+  justify-content: end;
+  mix-blend-mode: difference;
+  z-index: 200;
+}
+
+.menu-icon a {
+  position: fixed;
+}
+
+.wrap {
+  font-family: "Anton", sans-serif;
+}
+
+main p {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.8vw;
+}
+@media (max-width: 1023px) {
+  main p {
+    font-size: 3.5vw;
+  }
+}
+@media (max-width: 767px) {
+  main p {
+    font-size: 6vw;
+  }
+}
+
+.spacer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .spacer__bottom {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.network {
+  color: whitesmoke;
+  bottom: 0;
+  font-size: 1.5vw;
+  z-index: 2;
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .network {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 767px) {
+  .network {
+    font-size: 8vw;
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 767px) {
+  ul {
+    display: inline-block;
+  }
+}
+
+li {
+  font-family: "Anton", sans-serif;
+  font-size: 1.5vw;
+  margin-bottom: 3vw;
+  transition: 0.5s ease-in;
+}
+@media (max-width: 1023px) {
+  li {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 767px) {
+  li {
+    font-size: 5.5vw;
+  }
+}
+
+li:hover {
+  color: rgb(88, 88, 88);
+}
