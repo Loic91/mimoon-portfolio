@@ -1,59 +1,3 @@
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  user-select: none;
-  outline: none;
-  -webkit-touch-callout: none;
-}
-
-* {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
-/* Works on Firefox */
-* {
-  scrollbar-width: thin;
-}
-
-/* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 7px;
-}
-
-*::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0);
-}
-
-*::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  background-color: rgb(100, 99, 99);
-  border: 3px solid rgba(255, 255, 255, 0);
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 0.5208333333vw;
-  height: 100%;
-  left: 0;
-  overflow-x: hidden;
-  width: 100%;
-}
-@media (max-width: 768px) {
-  html {
-    font-size: 2.6666666667vw;
-  }
-}
-
-a {
-  color: inherit;
-  outline: none;
-  pointer-events: auto;
-  text-decoration: none;
-}
-
 body {
   background-color: #e0dde4;
 }
@@ -98,10 +42,16 @@ body {
 .section_logo svg {
   width: 60%;
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .section_logo svg {
     width: 80%;
     top: 20vw;
+  }
+}
+@media (max-width: 767px) {
+  .section_logo svg {
+    width: 80%;
+    top: 50vw;
   }
 }
 
@@ -412,8 +362,9 @@ body {
 
 .main .intro__subtitle__2 {
   font-family: "Bebas Neue", cursive;
-  font-size: 3vw;
-  color: #312b2b;
+  font-size: 2vw;
+  color: whitesmoke;
+  mix-blend-mode: difference;
   position: relative;
   text-align: center;
   margin: auto;
@@ -457,55 +408,9 @@ video {
   left: 0px;
   top: 0px;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   object-fit: cover;
   overflow: hidden;
-}
-
-.clip-text-video__text {
-  position: absolute;
-  margin-top: -2vw;
-  width: 100vw;
-  height: 105vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: #fff;
-  overflow: hidden;
-  background: linear-gradient(to bottom, black 98%, #e0dde4);
-  mix-blend-mode: multiply;
-}
-@media (max-width: 1023px) {
-  .clip-text-video__text {
-    height: 103vh;
-  }
-}
-@media (max-width: 767px) {
-  .clip-text-video__text {
-    margin-top: -6vw;
-    height: 103vh;
-  }
-}
-
-.clip-text-video__text p {
-  font-size: 40vw;
-  line-height: 1;
-  font-weight: 900;
-  font-family: "Anton", sans-serif;
-}
-@media (max-width: 1023px) {
-  .clip-text-video__text p {
-    font-size: 60vw;
-    margin-top: -150px;
-  }
-}
-@media (max-width: 767px) {
-  .clip-text-video__text p {
-    font-size: 60vw;
-    top: 50%;
-    position: absolute;
-  }
 }
 
 .spacer {

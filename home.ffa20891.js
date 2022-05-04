@@ -10385,8 +10385,28 @@ _ScrollSmoother.ScrollSmoother.create({
 var animation = /*#__PURE__*/_createClass(function animation() {
   _classCallCheck(this, animation);
 
-  // FONCTION HELPER POUR REPONDRE AUX DES MEDIAS QUERIES
+  _gsap.gsap.from(".clip-text-video", 2.4, {
+    opacity: 0,
+    ease: _gsap.Expo.easeInOut,
+    delay: 3.3
+  });
+
+  _gsap.gsap.from("#logo-scroll", 2.4, {
+    x: "-300%",
+    rotation: -10,
+    ease: _gsap.Expo.easeInOut,
+    delay: 2.7
+  });
+
+  _gsap.gsap.from("#logo-smoother", 2.4, {
+    x: "300%",
+    rotation: 10,
+    ease: _gsap.Expo.easeInOut,
+    delay: 2.7
+  }); // FONCTION HELPER POUR REPONDRE AUX DES MEDIAS QUERIES
   // https://codepen.io/osublake/pen/WKpmxN
+
+
   function installMediaQueryWatcher(mediaQuery, layoutChangedCallback) {
     var mql = window.matchMedia(mediaQuery);
     mql.addListener(function (e) {
@@ -10397,14 +10417,13 @@ var animation = /*#__PURE__*/_createClass(function animation() {
   // =======================================================================
   // =======================================================================
   // =======================================================================
-
-
-  _gsap.gsap.from(".section_logo", 3.8, {
-    opacity: 0,
-    y: "10%",
-    ease: _gsap.Expo.easeInOut,
-    delay: 3.9
-  }); //* Header - Logo Mimoon qui se fractionne
+  // gsap.from(".section_logo", 3.8, {
+  //   opacity: 0,
+  //   y: "10%",
+  //   ease: Expo.easeInOut,
+  //   delay: 3.9,
+  // });
+  //* Header - Logo Mimoon qui se fractionne
 
 
   var paths = _gsap.gsap.utils.toArray("#logo-scroll path, #logo-smoother path");

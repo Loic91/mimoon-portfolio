@@ -6838,6 +6838,10 @@ var menu = /*#__PURE__*/_createClass(function menu() {
     $('.item a').mousemove(function (e) {
       parallax(e, parallaxItem3);
     });
+    var parallaxItem4 = document.querySelector('#parallax4');
+    $('.item a').mousemove(function (e) {
+      parallax(e, parallaxItem4);
+    });
 
     function parallax(e, target) {
       var x = ($('.sub-menu').width() - target.offsetWidth) / 2 - (e.pageX - $('.sub-menu').width() / 2) / 3;
