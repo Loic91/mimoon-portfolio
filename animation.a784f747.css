@@ -373,6 +373,7 @@ body {
 @media (max-width: 767px) {
   .main .intro__subtitle__2 {
     font-size: 5vw;
+    bottom: 5%;
   }
 }
 

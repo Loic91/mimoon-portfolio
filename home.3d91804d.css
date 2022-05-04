@@ -235,6 +235,10 @@ nav {
   }
 }
 
+.section_1 {
+  height: 100vh;
+}
+
 #title {
   height: 100vh;
 }
