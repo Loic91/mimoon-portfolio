@@ -71,6 +71,7 @@ body .sub-menu {
 }
 @media (max-width: 767px) {
   body .sub-menu {
+    margin-top: 0;
     position: fixed;
   }
 }
