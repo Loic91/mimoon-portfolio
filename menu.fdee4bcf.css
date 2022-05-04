@@ -33,11 +33,6 @@ ul {
   display: flex;
   justify-content: space-evenly;
 }
-@media (max-width: 767px) {
-  ul {
-    display: inline-block;
-  }
-}
 
 li {
   font-family: "Anton", sans-serif;
