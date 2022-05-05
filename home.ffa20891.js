@@ -10464,7 +10464,71 @@ var navigation = /*#__PURE__*/_createClass(function navigation() {
 });
 
 exports.default = navigation;
-},{"gsap":"TpQl","gsap/SplitText":"BtuU"}],"VQaX":[function(require,module,exports) {
+},{"gsap":"TpQl","gsap/SplitText":"BtuU"}],"cFsA":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var cookie = /*#__PURE__*/_createClass(function cookie() {
+  _classCallCheck(this, cookie);
+
+  /* common fuctions */
+  function el(selector) {
+    return document.querySelector(selector);
+  }
+
+  function els(selector) {
+    return document.querySelectorAll(selector);
+  }
+
+  function on(selector, event, action) {
+    els(selector).forEach(function (e) {
+      return e.addEventListener(event, action);
+    });
+  }
+
+  function _cookie(name) {
+    var c = document.cookie.split('; ').find(function (cookie) {
+      return cookie && cookie.startsWith(name + '=');
+    });
+    return c ? c.split('=')[1] : false;
+  }
+  /* popup button hanler */
+
+
+  on('.cookie-popup button', 'click', function () {
+    el('.cookie-popup').classList.add('cookie-popup--accepted');
+    document.cookie = "cookie-accepted=true";
+  });
+  /* popup init hanler */
+
+  if (_cookie('cookie-accepted') !== "true") {
+    el('.cookie-popup').classList.add('cookie-popup--not-accepted');
+  }
+  /* page buttons handlers */
+
+
+  function _reset() {
+    document.cookie = 'cookie-accepted=false';
+    document.location.reload();
+  }
+
+  function _switchMode(cssClass) {
+    el('.cookie-popup').classList.toggle(cssClass);
+  }
+});
+
+exports.default = cookie;
+},{}],"VQaX":[function(require,module,exports) {
 "use strict";
 
 var _transition = _interopRequireDefault(require("../../utils/transition"));
@@ -10475,10 +10539,13 @@ var _animation = _interopRequireDefault(require("./animation"));
 
 var _navigation = _interopRequireDefault(require("../../utils/navigation"));
 
+var _cookie = _interopRequireDefault(require("./cookie"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 new _transition.default();
 new _preloader.default();
 new _animation.default();
 new _navigation.default();
-},{"../../utils/transition":"Hu2L","../../preloader/preloader":"srkp","./animation":"mPri","../../utils/navigation":"eJdp"}]},{},["VQaX"], null)
+new _cookie.default();
+},{"../../utils/transition":"Hu2L","../../preloader/preloader":"srkp","./animation":"mPri","../../utils/navigation":"eJdp","./cookie":"cFsA"}]},{},["VQaX"], null)
