@@ -10399,6 +10399,43 @@ var animation = /*#__PURE__*/_createClass(function animation() {
   // =======================================================================
 
 
+  _gsap.gsap.from(".box__img__1", 1.8, {
+    // opacity: 0,
+    y: "100%",
+    ease: "Expo.easeInOut",
+    delay: 1.5
+  });
+
+  _gsap.gsap.to(".box__img__2", 1.8, {
+    // opacity: 0,
+    y: "-100%",
+    ease: "Expo.easeInOut",
+    delay: 2.8
+  });
+
+  _gsap.gsap.to(".header__img", 1.8, {
+    opacity: 0.2,
+    delay: 3.9
+  }); // *************************************
+
+
+  var splitLines = new _SplitText.SplitText('#txt__2', {
+    type: "lines",
+    linesClass: "line line++"
+  });
+  $('#txt__2 .line').wrap('<div class="line-wrapper">');
+
+  _gsap.gsap.from(splitLines.lines, 2.8, {
+    y: '200%',
+    ease: "Power3.easeOut"
+  }, 4.1, splitRevert);
+
+  function splitRevert() {
+    $('#txt__2 .line').unwrap();
+    splitLines.revert();
+  } // *************************************
+
+
   _gsap.gsap.from(".section_logo", 3.8, {
     opacity: 0,
     y: "10%",
@@ -10429,51 +10466,50 @@ var animation = /*#__PURE__*/_createClass(function animation() {
     opacity: 0
   }, 0); //* Header - logo FPV
   // PERMET DE CHANGER D'ANIMATION EN FONCTION DE LA TAILLE DE L'ECRAN
-
-  installMediaQueryWatcher("(min-width: 769px)", function (matches) {
-    if (matches) {
-      var header = document.querySelectorAll('#txt');
-
-      var mySplitText_header = new _SplitText.SplitText(header, {
-        type: "words",
-        ease: 'Sine.in'
-      }),
-          splitTextTimeline = _gsap.gsap.timeline();
-
-      _gsap.gsap.set(header, {
-        perspective: 200
-      });
-
-      mySplitText_header.split({
-        type: "chars, words, lines"
-      });
-      splitTextTimeline.from(mySplitText_header.chars, {
-        duration: 3,
-        autoAlpha: 0,
-        scale: 0,
-        y: '-50%',
-        force3D: true,
-        stagger: 0.02,
-        repeat: 1
-      }, 0.5).to(mySplitText_header.words, {
-        duration: 1,
-        y: '0%',
-        stagger: 0.1
-      }, "lines").to(mySplitText_header.words, {
-        duration: 1,
-        stagger: 0.1
-      }, "words+=0.1");
-      splitTextTimeline.play();
-    } else {
-      _gsap.gsap.from("#txt", 2.8, {
-        y: "10%",
-        opacity: 0,
-        ease: _gsap.Expo.easeInOut,
-        // ease: slow,
-        delay: 3.5
-      });
-    }
-  }); // =======================================================================
+  // installMediaQueryWatcher("(min-width: 769px)", (matches) => {
+  //   if (matches) {
+  //     const header = document.querySelectorAll('#txt')
+  //     let  mySplitText_header = new SplitText(header, {
+  //       type:"words",
+  //       ease:'Sine.in'
+  //     }),
+  //     splitTextTimeline = gsap.timeline();
+  //     gsap.set(header, {
+  //       perspective:200
+  //     });
+  //     mySplitText_header.split({
+  //       type:"chars, words, lines"
+  //     })
+  //     splitTextTimeline.from(mySplitText_header.chars, {
+  //       duration: 3, 
+  //       autoAlpha:0, 
+  //       scale:0,
+  //       y:'-50%', 
+  //       force3D:true, 
+  //       stagger: 0.02, 
+  //       repeat: 1
+  //     }, 0.5)
+  //       .to(mySplitText_header.words, {
+  //         duration: 1,
+  //         y:'0%', 
+  //         stagger: 0.1
+  //       }, "lines")
+  //       .to(mySplitText_header.words, {
+  //         duration: 1,  
+  //         stagger: 0.1
+  //       }, "words+=0.1")
+  //     splitTextTimeline.play();
+  //   } else {
+  //       gsap.from("#txt", 2.8, {
+  //         y: "10%",
+  //         opacity: 0,
+  //         ease: Expo.easeInOut,
+  //         // ease: slow,
+  //         delay: 3.5,
+  //       })
+  //     }
+  // })
+  // =======================================================================
   // =======================================================================
   // =======================================================================
   // =======================================================================
@@ -10646,7 +10682,7 @@ var animation = /*#__PURE__*/_createClass(function animation() {
         y: "10%",
         opacity: 0,
         ease: "slow",
-        delay: 0.1,
+        delay: 4.9,
         scrollTrigger: {
           trigger: ".container",
           start: 'top center'

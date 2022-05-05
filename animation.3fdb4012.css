@@ -58,7 +58,59 @@ body {
   background-color: #e0dde4;
 }
 
-/* Grainy texture animation by Geoff Graham https://css-tricks.com/snippets/css/animated-grainy-texture/ */
+.header__img {
+  overflow: hidden;
+  background-color: #e0dde4;
+  position: relative;
+  max-width: 550px;
+  max-height: 610px;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: -20vw;
+}
+@media (max-width: 767px) {
+  .header__img {
+    max-width: 250px;
+    max-height: 350px;
+    top: 10vw;
+  }
+}
+
+.box__img__1 {
+  background-image: url("45.9c9b664b.jpeg");
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 610px;
+  border-radius: 30px;
+}
+@media (max-width: 767px) {
+  .box__img__1 {
+    max-width: 250px;
+    max-height: 350px;
+  }
+}
+
+.box__img__2 {
+  background-image: url("2.462817d3.jpg");
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 610px;
+  border-radius: 30px;
+}
+@media (max-width: 767px) {
+  .box__img__2 {
+    max-width: 250px;
+    max-height: 350px;
+  }
+}
+
+.block {
+  top: -10vw;
+}
+
 .svg__logo {
   overflow: visible !important;
   max-width: 150vw;
@@ -217,6 +269,7 @@ body {
   display: flex;
   max-width: 44vw;
   margin: 0 auto;
+  margin-top: -300px;
 }
 @media (max-width: 767px) {
   .container {
@@ -282,7 +335,7 @@ body {
 #quote__cursive {
   font-family: "Square Peg", cursive;
   font-size: 2.1vw;
-  line-height: 33px;
+  line-height: 37px;
   color: #312b2b;
   text-align: center;
 }
@@ -397,13 +450,13 @@ body {
 
 .main .intro__subtitle {
   font-family: "Bebas Neue", cursive;
-  font-size: 9vw;
+  font-size: 13vw;
   color: #312b2b;
   position: relative;
   text-align: center;
   margin: auto;
   line-height: 0.85;
-  margin-top: 100px;
+  margin-top: 10vw;
 }
 @media (max-width: 767px) {
   .main .intro__subtitle {
@@ -423,6 +476,10 @@ body {
   .main .intro__subtitle__2 {
     font-size: 6vw;
   }
+}
+
+h2 .line-wrapper {
+  overflow: hidden;
 }
 
 .social__link a {

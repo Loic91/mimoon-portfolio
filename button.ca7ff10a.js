@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"scss/pages/gallery/index.scss":[function(require,module,exports) {
+})({"scss/pages/home/button.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -150,7 +150,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52025" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64859" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -466,4 +466,4 @@ module.exports = function loadJSBundle(bundle) {
 },{}],0:[function(require,module,exports) {
 var b=require("../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("js",require("../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/loaders/browser/js-loader.js"));b.load([]);
 },{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0], null)
-//# sourceMappingURL=/gallery.243b16fe.js.map
+//# sourceMappingURL=/button.ca7ff10a.js.map
