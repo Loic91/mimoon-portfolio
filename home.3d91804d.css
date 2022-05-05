@@ -279,6 +279,7 @@ nav {
 .cookie-popup {
   font-family: sans-serif;
   font-size: 0.9vw;
+  max-width: 400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -292,6 +293,18 @@ nav {
   transition: opacity 0.5s;
   opacity: 0;
   border-radius: 30px;
+}
+@media (max-width: 1023px) {
+  .cookie-popup {
+    max-width: 300px;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 767px) {
+  .cookie-popup {
+    max-width: 200px;
+    font-size: 4vw;
+  }
 }
 
 .cookie-popup--short {
