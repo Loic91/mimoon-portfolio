@@ -11585,12 +11585,36 @@ var animation = /*#__PURE__*/_createClass(function animation() {
     y: '200%',
     ease: _gsap.Power3.easeOut // ease: "Expo.easeInOut",  
 
-  }, 1.2, splitRevert);
+  }, 4.2, splitRevert);
 
   function splitRevert() {
     $('#split-me .line').unwrap();
     splitLines.revert();
   }
+
+  _gsap.gsap.from(".network", 1.8, {
+    opacity: 0,
+    delay: 4.9
+  });
+
+  _gsap.gsap.from(".box__img__1", 1.8, {
+    // opacity: 0,
+    y: "100%",
+    ease: "Expo.easeInOut",
+    delay: 1.5
+  });
+
+  _gsap.gsap.to(".box__img__2", 1.8, {
+    // opacity: 0,
+    y: "-100%",
+    ease: "Expo.easeInOut",
+    delay: 2.8
+  });
+
+  _gsap.gsap.to(".header__img", 1.8, {
+    opacity: 0.2,
+    delay: 3.9
+  });
 });
 
 exports.default = animation;

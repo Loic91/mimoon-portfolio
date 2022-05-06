@@ -26,19 +26,7 @@ body {
 }
 
 #about__container {
-  position: fixed;
   z-index: 2;
-  mix-blend-mode: difference;
-}
-@media (max-width: 1023px) {
-  #about__container {
-    position: relative;
-  }
-}
-@media (max-width: 767px) {
-  #about__container {
-    position: relative;
-  }
 }
 
 #nav {
@@ -118,7 +106,7 @@ main .bold {
 
 .network {
   font-family: sans-serif;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   bottom: 0;
   font-size: 1.5vw;
   z-index: 2;
