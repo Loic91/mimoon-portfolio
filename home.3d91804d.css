@@ -188,9 +188,19 @@ nav {
   font-family: sans-serif;
   mix-blend-mode: difference;
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 1023px) {
+  .button__box a {
+    top: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .button__box a {
+    top: 60%;
+  }
 }
 
 .button__box a:hover {
