@@ -194,12 +194,12 @@ nav {
 }
 @media (max-width: 1023px) {
   .button__box a {
-    top: 60%;
+    top: 50%;
   }
 }
 @media (max-width: 767px) {
   .button__box a {
-    top: 60%;
+    top: 50%;
   }
 }
 
