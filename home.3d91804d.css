@@ -345,11 +345,6 @@ nav {
   text-decoration: none;
 }
 
-.cookie-popup-actions {
-  flex: 1;
-  text-align: right;
-}
-
 .cookie-popup-actions button {
   color: orange;
   border: none;
@@ -362,6 +357,7 @@ nav {
   font-size: 0.75rem;
   padding: 0;
   cursor: pointer;
+  margin: 10px;
 }
 
 .cookie-popup-actions button:hover {
@@ -400,10 +396,6 @@ nav {
 .menu-icon {
   justify-content: end;
   mix-blend-mode: difference;
-}
-
-.menu-icon a {
-  position: fixed;
 }
 
 .wrap {
