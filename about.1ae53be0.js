@@ -11612,7 +11612,7 @@ var animation = /*#__PURE__*/_createClass(function animation() {
   });
 
   _gsap.gsap.to(".header__img", 1.8, {
-    opacity: 0.2,
+    opacity: 0.1,
     delay: 3.9
   });
 });
