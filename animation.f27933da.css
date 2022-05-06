@@ -1,0 +1,59 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  user-select: none;
+  outline: none;
+  -webkit-touch-callout: none;
+}
+
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: rgb(100, 99, 99);
+  border: 3px solid rgba(255, 255, 255, 0);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 0.5208333333vw;
+  height: 100%;
+  left: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 2.6666666667vw;
+  }
+}
+
+a {
+  color: inherit;
+  outline: none;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+p .line-wrapper {
+  overflow: hidden;
+}

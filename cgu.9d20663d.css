@@ -30,11 +30,6 @@ body {
   z-index: 2;
   mix-blend-mode: difference;
 }
-@media (max-width: 1023px) {
-  #about__container {
-    position: relative;
-  }
-}
 @media (max-width: 767px) {
   #about__container {
     position: relative;
@@ -86,7 +81,7 @@ main p {
 }
 
 main .bold {
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-weight: bold;
 }
 @media (max-width: 1023px) {
@@ -97,6 +92,20 @@ main .bold {
 @media (max-width: 767px) {
   main .bold {
     font-size: 6.5vw;
+  }
+}
+
+main .title__bold {
+  font-size: 2vw;
+}
+@media (max-width: 1023px) {
+  main .title__bold {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 767px) {
+  main .title__bold {
+    font-size: 6vw;
   }
 }
 
