@@ -188,7 +188,7 @@ nav {
   font-family: sans-serif;
   mix-blend-mode: difference;
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -313,8 +313,8 @@ nav {
 }
 
 .cookie-popup--dark {
-  background: #000;
-  color: #fff;
+  background: whitesmoke;
+  color: rgb(0, 0, 0);
 }
 
 .cookie-popup--not-accepted {
