@@ -186,7 +186,6 @@ nav {
   transition: 0.5s;
   letter-spacing: 4px;
   font-family: sans-serif;
-  mix-blend-mode: difference;
   position: absolute;
   top: 70%;
   left: 50%;

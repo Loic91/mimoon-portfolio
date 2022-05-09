@@ -54,10 +54,6 @@ a {
   text-decoration: none;
 }
 
-article {
-  display: none;
-}
-
 p .line-wrapper {
   overflow: hidden;
 }
@@ -71,18 +67,18 @@ p .line-wrapper {
   z-index: -1;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: -17vw;
+  top: 30vh;
 }
 @media (max-width: 1023px) {
   .header__img {
-    top: -50vw;
+    top: 30vh;
   }
 }
 @media (max-width: 767px) {
   .header__img {
     max-width: 300px;
     max-height: 350px;
-    top: -250vw;
+    top: 30vh;
   }
 }
 
@@ -118,13 +114,14 @@ p .line-wrapper {
 
 .block__container {
   color: black;
-  top: 100%;
+  top: 20%;
   position: absolute;
-  max-width: 900px;
+  max-width: 1200px;
 }
 @media (max-width: 767px) {
   .block__container {
-    position: relative;
+    position: absolute;
+    top: 10%;
     max-width: 350px;
   }
 }
