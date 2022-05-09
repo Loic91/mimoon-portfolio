@@ -186,15 +186,6 @@ body {
   z-index: 1;
 }
 
-.container__title__2 {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  z-index: 1;
-}
-
 .container__title__3 {
   display: flex;
   width: 100%;
@@ -202,21 +193,6 @@ body {
   align-items: flex-start;
   flex-direction: column;
   z-index: 1;
-}
-
-#title__2 {
-  height: 80vh;
-  margin-top: 15vw;
-}
-@media (max-width: 1023px) {
-  #title__2 {
-    height: 50vh;
-  }
-}
-@media (max-width: 767px) {
-  #title__2 {
-    height: 50vh;
-  }
 }
 
 #quote__2 {
@@ -495,40 +471,8 @@ body {
   }
 }
 
-.main .intro__subtitle__2 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 3vw;
-  color: #312b2b;
-  position: relative;
-  text-align: center;
-  margin: auto;
-}
-@media (max-width: 767px) {
-  .main .intro__subtitle__2 {
-    font-size: 6vw;
-  }
-}
-
 h2 .line-wrapper {
   overflow: hidden;
-}
-
-.social__link a {
-  font-family: "Bebas Neue", cursive;
-  font-size: 3vw;
-  color: #312b2b;
-  position: relative;
-  text-align: center;
-  margin: auto;
-}
-@media (max-width: 767px) {
-  .social__link a {
-    font-size: 6vw;
-  }
-}
-
-.social__link:hover {
-  color: rgb(110, 108, 108);
 }
 
 #title {
@@ -553,6 +497,13 @@ video {
 
 .spacer {
   height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spacer__10 {
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;

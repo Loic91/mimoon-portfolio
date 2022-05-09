@@ -96,3 +96,70 @@ main {
 main p {
   font-size: 1vw;
 }
+
+.network {
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+  bottom: 0;
+  font-size: 1.5vw;
+  z-index: 2;
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .network {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 767px) {
+  .network {
+    font-size: 8vw;
+    max-width: 350px;
+    margin: 10px;
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 767px) {
+  ul {
+    display: inline-block;
+  }
+}
+
+li {
+  font-family: "Anton", sans-serif;
+  font-size: 1.5vw;
+  margin-bottom: 3vw;
+  transition: 0.5s ease-in;
+}
+@media (max-width: 1023px) {
+  li {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 767px) {
+  li {
+    font-size: 5.5vw;
+  }
+}
+
+li:hover {
+  color: rgb(88, 88, 88);
+}
+
+.spacer__bottom {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .spacer__bottom {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
